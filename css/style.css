@@ -1,0 +1,195 @@
+:root{
+    --prim: #131c29;
+    --text: #596573;
+    --bgColor: #f4f4f6;
+    --sec: #ff8901;
+    --buttonColor: #213349;
+    --headerFont: 'Oswald', sans-serif;
+    --textFont: 'Open Sans Condensed', sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.top-header a {
+    color: var(--text);
+}
+
+.top-header {
+    background-color: var(--prim);
+}
+
+.main-nav-item {
+    background-color: var(--buttonColor);
+    border-radius: 5px;
+}
+
+.main-nav-item:nth-child(1) {
+    background-color: var(--sec);
+}
+
+.main-nav-item a {
+    color: var(--bgColor);
+}
+
+.main-nav-item a:hover {
+    background-color: var(--sec);
+    border-radius: 5px;
+}
+
+.main-nav-item:nth-child(1) a:hover {
+    background-color: var(--buttonColor);
+    
+}
+
+ul {
+    list-style-type: none;
+}
+
+footer {
+    background: radial-gradient(
+        at top right,
+        #33597e, #0e1620);
+}
+
+footer a {
+    color: var(--bgColor);
+}
+
+.main-footer {
+    color: var(--bgColor);
+}
+
+
+
+.services {
+    /* border: 1px solid green; */
+}
+
+.opportunities {
+    /* border: 1px solid red; */
+}
+
+.news {
+    /* border: 1px solid hotpink; */
+}
+
+.date-div {
+    
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.date-div1 {
+    background-color: #b7863a;
+}
+
+.date-div2 {
+    background-color: #ad624b;
+}
+
+.date-div3 {
+    background-color: #c03f5e;
+}
+
+.date {
+    font-size: x-large;
+}
+
+.colophon {
+    background-color: var(--prim);
+    color: var(--text);
+}
+
+.service-list-item {
+    list-style-image: url('../media/detroix.png')
+}
+
+.opportunities-list {
+    list-style-image:url(../media/chat.png);
+
+}
+
+@media (min-width: 768px) {
+    h2 {
+        text-align: center;
+    }
+
+    .main-nav-list {
+        flex-wrap: nowrap;       
+    }
+
+    .services {
+        line-height: 25px;
+        font-size: 20px;
+    }
+
+    .btn-div {
+        margin-top: 10px;
+    }
+
+    .opportunities-list {
+        line-height: 28px;
+        font-size: 20px;
+    }
+    
+    .news {
+        /* line-height: 20px; */
+        font-size: 10px;
+    }
+
+    .news-list-item {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .date-div {
+        height: fit-content;
+    } 
+
+    .month {
+        font-size: 14px;
+    }  
+}
+
+@media (min-width: 577px){
+    .content-section h2 {
+        text-align: center;
+    }
+    .services h2 {
+        text-align: center;
+    }
+
+    .opportunities h2 {
+        text-align: center;
+    }
+
+    .opportunities {
+        line-height: 22px;
+        font-size: 16px;
+    }
+
+    .colophon {
+        text-align: center;
+    }
+}
+
+@media (max-width: 576px) {
+    h2 {
+        text-align: center;
+    }
+
+    .top-link {
+        display: none;
+    }
+
+    .top-nav {
+        font-size: 12px;
+    }
+
+    .colophon {
+        text-align: center;
+    }
+}
